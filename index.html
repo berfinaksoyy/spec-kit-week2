@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quote of the Day - Daily inspiration with persistent favorites, full accessibility, and responsive design.">
+  <title>Quote of the Day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="app-header">
+      <h1 class="app-title">Quote of the Day</h1>
+      <p class="app-tagline">Timeless thoughts to inspire your daily journey</p>
+    </header>
+
+    <main class="app-container" role="main">
+      <article id="quote-card" class="quote-card" aria-live="polite" aria-atomic="true">
+        <div class="quote-content">
+          <span class="quote-mark-icon" aria-hidden="true">“</span>
+          <blockquote id="quote-text" class="quote-text">
+            Loading quote...
+          </blockquote>
+          <p class="quote-author-container">
+            — <cite id="quote-author" class="quote-author">Loading author...</cite>
+          </p>
+        </div>
+
+        <div class="card-actions">
+          <button 
+            id="favorite-btn" 
+            class="btn btn-favorite" 
+            type="button" 
+            aria-pressed="false" 
+            aria-label="Add quote to favorites">
+            <span id="favorite-icon" class="favorite-icon" aria-hidden="true">☆</span>
+            <span id="favorite-label" class="favorite-label">Favorite</span>
+          </button>
+
+          <button 
+            id="new-quote-btn" 
+            class="btn btn-primary" 
+            type="button">
+            New Quote
+          </button>
+        </div>
+      </article>
+    </main>
+
+    <footer class="app-footer">
+      <p class="footer-text">Built with standard HTML, CSS, and JavaScript. No external dependencies.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
